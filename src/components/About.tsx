@@ -1,6 +1,8 @@
 import { useLang } from '../context/LanguageContext'
 import { education, summary } from '../data/profile'
 
+const summaryParagraph = summary.paragraph
+
 export default function About() {
   const { t } = useLang()
 
