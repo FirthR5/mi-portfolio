@@ -106,8 +106,8 @@ export const experience: Experience = {
       company: 'ALSET',
       location: { es: 'Remoto', en: 'Remote' },
       period: {
-        es: 'Agosto 2024 – Junio 2026',
-        en: 'August 2024 – June 2026',
+        es: 'Agosto 2024 – Mayo 2026',
+        en: 'August 2024 – May 2026',
       },
       technologies: [
         'C#',
