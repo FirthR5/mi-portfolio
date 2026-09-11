@@ -22,7 +22,7 @@ export default function App() {
   return (
     <ThemeProvider>
       <LanguageProvider>
-        <BrowserRouter>
+        <BrowserRouter basename="/mi-portfolio">
           <ScrollToTop />
           <Routes>
             <Route
