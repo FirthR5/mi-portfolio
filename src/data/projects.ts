@@ -18,7 +18,7 @@ export const projects: Projects = {
       type: ProjectType.Commercial,
       description: [
         {
-          es: 'Desarrollé una plataforma completa de gestión para un negocio de manitas (handyman). El sistema administra citas, trabajos con estados y pagos, cotizaciones, facturas, clientes y evidencias fotográficas, todo expuesto a través de una API REST segura con autenticación.',
+          es: 'Desarrollé una plataforma completa de gestión para un negocio (handyman). El sistema administra citas, trabajos con estados y pagos, cotizaciones, facturas, clientes y evidencias fotográficas, todo expuesto a través de una API REST segura con autenticación.',
           en: 'Built a full management platform for a handyman business. The system manages appointments, jobs with statuses and payments, quotes, invoices, clients, and photo evidence, all exposed through a secure REST API with authentication.',
         },
         {
