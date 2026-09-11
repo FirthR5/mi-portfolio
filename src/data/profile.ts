@@ -219,20 +219,20 @@ export const experience: Experience = {
               },
               layout: 'wide',
               items: [
-                { src: '/media/jobs/Alset/stadio/Mobile/MAUI/Screenshot_1738180101.avif' },
-                { src: '/media/jobs/Alset/stadio/Mobile/MAUI/Screenshot 2025-12-11 at 10.07.08 AM.avif' },
-                { src: '/media/jobs/Alset/stadio/Mobile/MAUI/Simulator Screenshot - iPhone 17 Pro - 2025-12-02 at 09.11.19.avif' },
+                { src: '/mi-portfolio/media/jobs/Alset/stadio/Mobile/MAUI/Screenshot_1738180101.avif' },
+                { src: '/mi-portfolio/media/jobs/Alset/stadio/Mobile/MAUI/Screenshot 2025-12-11 at 10.07.08 AM.avif' },
+                { src: '/mi-portfolio/media/jobs/Alset/stadio/Mobile/MAUI/Simulator Screenshot - iPhone 17 Pro - 2025-12-02 at 09.11.19.avif' },
 
-                { src: '/media/jobs/Alset/stadio/Mobile/MAUI/Simulator Screenshot - iPhone 17 Pro - 2025-11-28 at 14.24.28.avif' },
-                { src: '/media/jobs/Alset/stadio/Mobile/MAUI/Screenshot_20250923-192626_Stadiobet.avif' },
-                { src: '/media/jobs/Alset/stadio/Mobile/MAUI/Screenshot_20250923-191829_Stadiobet.avif' },
+                { src: '/mi-portfolio/media/jobs/Alset/stadio/Mobile/MAUI/Simulator Screenshot - iPhone 17 Pro - 2025-11-28 at 14.24.28.avif' },
+                { src: '/mi-portfolio/media/jobs/Alset/stadio/Mobile/MAUI/Screenshot_20250923-192626_Stadiobet.avif' },
+                { src: '/mi-portfolio/media/jobs/Alset/stadio/Mobile/MAUI/Screenshot_20250923-191829_Stadiobet.avif' },
 
-                { src: '/media/jobs/Alset/stadio/Mobile/MAUI/Simulator Screenshot - iPhone 14 - 2025-11-13 at 10.29.12.avif' },
-                { src: '/media/jobs/Alset/stadio/Mobile/MAUI/Screenshot 2025-08-04 141048.avif' },
+                { src: '/mi-portfolio/media/jobs/Alset/stadio/Mobile/MAUI/Simulator Screenshot - iPhone 14 - 2025-11-13 at 10.29.12.avif' },
+                { src: '/mi-portfolio/media/jobs/Alset/stadio/Mobile/MAUI/Screenshot 2025-08-04 141048.avif' },
 
-                { src: '/media/jobs/Alset/stadio/Mobile/MAUI/Screenshot_20250602-173705_Stadiobet.avif' },
+                { src: '/mi-portfolio/media/jobs/Alset/stadio/Mobile/MAUI/Screenshot_20250602-173705_Stadiobet.avif' },
 
-                { src: '/media/jobs/Alset/stadio/Screenshot from 2025-10-08 13-42-39.avif' },
+                { src: '/mi-portfolio/media/jobs/Alset/stadio/Screenshot from 2025-10-08 13-42-39.avif' },
 
               ]
             },
@@ -244,13 +244,13 @@ export const experience: Experience = {
               },
               layout: 'before-after',
               items: [
-                { src: '/media/jobs/Alset/stadio/Mobile/BeforeAfter/Notifications1After.avif', caption: { es: "Notificationes (Después)", en: "Notifications (After)" }, badge: { es: "Después", en: "After" } },
-                { src: '/media/jobs/Alset/stadio/Mobile/BeforeAfter/Notifications1Before.avif', caption: { es: "Notificationes (Antes)", en: "Notifications (Before)" }, badge: { es: "Antes", en: "Before" } },
-                { src: '/media/jobs/Alset/stadio/Mobile/BeforeAfter/Profile1After.avif', caption: { es: "Perfil (Después)", en: "Profile (After)" }, badge: { es: "Después", en: "After" } },
-                { src: '/media/jobs/Alset/stadio/Mobile/BeforeAfter/Profile1Before.avif', caption: { es: "Perfil (Antes)", en: "Profile (Before)" }, badge: { es: "Antes", en: "Before" } },
-                { src: '/media/jobs/Alset/stadio/Mobile/BeforeAfter/Profile2Before.avif', caption: { es: "Perfil (Antes)", en: "Profile (Before)" }, badge: { es: "Antes", en: "Before" } },
-                { src: '/media/jobs/Alset/stadio/Mobile/BeforeAfter/Chat1After.avif', caption: { es: "Chat (Después)", en: "Chat (After)" }, badge: { es: "Después", en: "After" } },
-                { src: '/media/jobs/Alset/stadio/Mobile/BeforeAfter/Chat1Before.avif', caption: { es: "Chat (Antes)", en: "Chat (Before)" }, badge: { es: "Antes", en: "Before" } },
+                { src: '/mi-portfolio/media/jobs/Alset/stadio/Mobile/BeforeAfter/Notifications1After.avif', caption: { es: "Notificationes (Después)", en: "Notifications (After)" }, badge: { es: "Después", en: "After" } },
+                { src: '/mi-portfolio/media/jobs/Alset/stadio/Mobile/BeforeAfter/Notifications1Before.avif', caption: { es: "Notificationes (Antes)", en: "Notifications (Before)" }, badge: { es: "Antes", en: "Before" } },
+                { src: '/mi-portfolio/media/jobs/Alset/stadio/Mobile/BeforeAfter/Profile1After.avif', caption: { es: "Perfil (Después)", en: "Profile (After)" }, badge: { es: "Después", en: "After" } },
+                { src: '/mi-portfolio/media/jobs/Alset/stadio/Mobile/BeforeAfter/Profile1Before.avif', caption: { es: "Perfil (Antes)", en: "Profile (Before)" }, badge: { es: "Antes", en: "Before" } },
+                { src: '/mi-portfolio/media/jobs/Alset/stadio/Mobile/BeforeAfter/Profile2Before.avif', caption: { es: "Perfil (Antes)", en: "Profile (Before)" }, badge: { es: "Antes", en: "Before" } },
+                { src: '/mi-portfolio/media/jobs/Alset/stadio/Mobile/BeforeAfter/Chat1After.avif', caption: { es: "Chat (Después)", en: "Chat (After)" }, badge: { es: "Después", en: "After" } },
+                { src: '/mi-portfolio/media/jobs/Alset/stadio/Mobile/BeforeAfter/Chat1Before.avif', caption: { es: "Chat (Antes)", en: "Chat (Before)" }, badge: { es: "Antes", en: "Before" } },
               ]
             },
 
@@ -270,12 +270,12 @@ export const experience: Experience = {
               items: [
 
                 // TODO: Uncomment this when I already edit the video
-                //{ src: '/media/jobs/Alset/stadio/Web/web-demo-2025-10-21.mov', size: MediaSize.Full },
-                { src: '/media/jobs/Alset/stadio/Web/Screenshot_20251104-201718_Firefox.avif' },
-                { src: '/media/jobs/Alset/stadio/Web/Screenshot_20251106-163316_Firefox.avif' },
-                { src: '/media/jobs/Alset/stadio/Web/Screenshot_20251104-202236_Firefox.avif' },
+                //{ src: '/mi-portfolio/media/jobs/Alset/stadio/Web/web-demo-2025-10-21.mov', size: MediaSize.Full },
+                { src: '/mi-portfolio/media/jobs/Alset/stadio/Web/Screenshot_20251104-201718_Firefox.avif' },
+                { src: '/mi-portfolio/media/jobs/Alset/stadio/Web/Screenshot_20251106-163316_Firefox.avif' },
+                { src: '/mi-portfolio/media/jobs/Alset/stadio/Web/Screenshot_20251104-202236_Firefox.avif' },
 
-                { src: '/media/jobs/Alset/stadio/Web/Screenshot 2025-10-21 at 9.49.59 AM.avif', size: MediaSize.Full },
+                { src: '/mi-portfolio/media/jobs/Alset/stadio/Web/Screenshot 2025-10-21 at 9.49.59 AM.avif', size: MediaSize.Full },
 
               ]
             },
@@ -285,11 +285,11 @@ export const experience: Experience = {
                 en: ""
               },
               items: [
-                { src: '/media/jobs/Alset/stadio/Mobile/Expo/Screenshot_20260310-152210_stadiobet.avif' },
-                { src: '/media/jobs/Alset/stadio/Mobile/Expo/Screenshot_20260310-154037_stadiobet.avif' },
-                { src: '/media/jobs/Alset/stadio/Mobile/Expo/Screenshot_20260317-115305.avif' },
+                { src: '/mi-portfolio/media/jobs/Alset/stadio/Mobile/Expo/Screenshot_20260310-152210_stadiobet.avif' },
+                { src: '/mi-portfolio/media/jobs/Alset/stadio/Mobile/Expo/Screenshot_20260310-154037_stadiobet.avif' },
+                { src: '/mi-portfolio/media/jobs/Alset/stadio/Mobile/Expo/Screenshot_20260317-115305.avif' },
                 // TODO: Uncomment this when I already edit the video
-                //{ src: '/media/jobs/Alset/stadio/Mobile/Expo/mobile-demo-2026-03-17.mov', size: MediaSize.Full },
+                //{ src: '/mi-portfolio/media/jobs/Alset/stadio/Mobile/Expo/mobile-demo-2026-03-17.mov', size: MediaSize.Full },
               ]
             },
 
@@ -307,11 +307,11 @@ export const experience: Experience = {
               },
               layout: 'slides',
               items: [
-                { src: '/media/jobs/Alset/3pl/3pl-20260303-122134.avif', size: MediaSize.Full },
-                { src: '/media/jobs/Alset/3pl/3pl-20260413-093441.avif' },
-                { src: '/media/jobs/Alset/3pl/3pl-20260429-155116.avif', },
-                { src: '/media/jobs/Alset/3pl/3pl-20260410-144516.avif' },
-                { src: '/media/jobs/Alset/3pl/3pl-20260318 130029.avif' },
+                { src: '/mi-portfolio/media/jobs/Alset/3pl/3pl-20260303-122134.avif', size: MediaSize.Full },
+                { src: '/mi-portfolio/media/jobs/Alset/3pl/3pl-20260413-093441.avif' },
+                { src: '/mi-portfolio/media/jobs/Alset/3pl/3pl-20260429-155116.avif', },
+                { src: '/mi-portfolio/media/jobs/Alset/3pl/3pl-20260410-144516.avif' },
+                { src: '/mi-portfolio/media/jobs/Alset/3pl/3pl-20260318 130029.avif' },
 
               ],
             }
@@ -357,13 +357,13 @@ export const experience: Experience = {
               },
               layout: 'wide',
               items: [
-                { src: '/media/jobs/Guajardo/IMG_20231020_163745.avif' },
-                { src: '/media/jobs/Guajardo/IMG_20231020_163756.avif' },
-                { src: '/media/jobs/Guajardo/IMG_20231103_154116.avif' },
-                { src: '/media/jobs/Guajardo/IMG_20231103_154123.avif' },
-                { src: '/media/jobs/Guajardo/IMG_20231103_154138.avif' },
-                { src: '/media/jobs/Guajardo/IMG_20231103_154106.avif' },
-                { src: '/media/jobs/Guajardo/IMG_20231103_154040.avif' },
+                { src: '/mi-portfolio/media/jobs/Guajardo/IMG_20231020_163745.avif' },
+                { src: '/mi-portfolio/media/jobs/Guajardo/IMG_20231020_163756.avif' },
+                { src: '/mi-portfolio/media/jobs/Guajardo/IMG_20231103_154116.avif' },
+                { src: '/mi-portfolio/media/jobs/Guajardo/IMG_20231103_154123.avif' },
+                { src: '/mi-portfolio/media/jobs/Guajardo/IMG_20231103_154138.avif' },
+                { src: '/mi-portfolio/media/jobs/Guajardo/IMG_20231103_154106.avif' },
+                { src: '/mi-portfolio/media/jobs/Guajardo/IMG_20231103_154040.avif' },
 
               ],
             }
@@ -419,8 +419,8 @@ export const experience: Experience = {
             },
             layout: 'slides',
             items: [
-              { src: '/media/jobs/Cellap/IMG_20220913_173406_307.avif', size: MediaSize.Full },
-              { src: '/media/jobs/Cellap/IMG_20221001_110428_270.avif', size: MediaSize.Full },
+              { src: '/mi-portfolio/media/jobs/Cellap/IMG_20220913_173406_307.avif', size: MediaSize.Full },
+              { src: '/mi-portfolio/media/jobs/Cellap/IMG_20221001_110428_270.avif', size: MediaSize.Full },
             ]
           }],
           items: [

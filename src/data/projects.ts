@@ -32,8 +32,8 @@ export const projects: Projects = {
         en: 'Commercial management platform: appointments, jobs, payments, and invoices.',
       },
       media: [
-        { src: '/media/proj/handy/h264_2026-02-04 23-05-14.mp4', size: MediaSize.Full },
-        { src: '/media/proj/handy/h264_2026-02-04 23-19-16.mp4', size: MediaSize.Full },
+        { src: '/mi-portfolio/media/proj/handy/h264_2026-02-04 23-05-14.mp4', size: MediaSize.Full },
+        { src: '/mi-portfolio/media/proj/handy/h264_2026-02-04 23-19-16.mp4', size: MediaSize.Full },
       ],
     },
     {
@@ -61,8 +61,8 @@ export const projects: Projects = {
         en: 'Full ordering flow — waiter, kitchen, and cash register — in clips.',
       },
       media: [
-        { src: '/media/poS/WorkFlow_Admin.mp4', size: MediaSize.Full },
-        { src: '/media/poS/WorkFlow_Waiter-Chef-CashReg.mp4', size: MediaSize.Full },
+        { src: '/mi-portfolio/media/poS/WorkFlow_Admin.mp4', size: MediaSize.Full },
+        { src: '/mi-portfolio/media/poS/WorkFlow_Waiter-Chef-CashReg.mp4', size: MediaSize.Full },
       ],
     },
     {
@@ -88,7 +88,7 @@ export const projects: Projects = {
         es: 'Membresías, asistencia, inventario y ventas en una app de escritorio.',
         en: 'Memberships, attendance, inventory, and sales in a desktop app.',
       },
-      media: [{ src: '/media/gym/SecondProject.mp4', size: MediaSize.Full }],
+      media: [{ src: '/mi-portfolio/media/gym/SecondProject.mp4', size: MediaSize.Full }],
     },
     {
       name: {
@@ -119,15 +119,15 @@ export const projects: Projects = {
         en: 'Daily prices via web scraping from Mercado Libre, Soriana, and Coppel.',
       },
       media: [
-        { src: '/media/proj/tracker/code-project.avif', size: MediaSize.Full },
-        { src: '/media/proj/tracker/price-history-wallet.avif' },
-        { src: '/media/proj/tracker/price-history-dumbbells.avif' },
-        { src: '/media/proj/tracker/discounts-table.avif' },
-        { src: '/media/proj/tracker/discounts-cards.avif' },
-        { src: '/media/proj/tracker/product-list-1.avif' },
-        { src: '/media/proj/tracker/products-list.avif' },
-        { src: '/media/proj/tracker/search-results.avif' },
-        { src: '/media/proj/tracker/search-no-results.avif' },
+        { src: '/mi-portfolio/media/proj/tracker/code-project.avif', size: MediaSize.Full },
+        { src: '/mi-portfolio/media/proj/tracker/price-history-wallet.avif' },
+        { src: '/mi-portfolio/media/proj/tracker/price-history-dumbbells.avif' },
+        { src: '/mi-portfolio/media/proj/tracker/discounts-table.avif' },
+        { src: '/mi-portfolio/media/proj/tracker/discounts-cards.avif' },
+        { src: '/mi-portfolio/media/proj/tracker/product-list-1.avif' },
+        { src: '/mi-portfolio/media/proj/tracker/products-list.avif' },
+        { src: '/mi-portfolio/media/proj/tracker/search-results.avif' },
+        { src: '/mi-portfolio/media/proj/tracker/search-no-results.avif' },
 
       ]
     },
@@ -169,10 +169,10 @@ export const projects: Projects = {
         en: 'Classifies opinion tweets about Mexican politics using ML / Deep Learning.',
       },
       media: [
-        { src: '/media/proj/opinion/dms-screenshot-1788861969985.avif', size: MediaSize.Full },
-        { src: '/media/proj/opinion/IMG_20230410_210139546.avif' },
-        { src: '/media/proj/opinion/Screenshot from 2023-06-08 16-12-02.avif' },
-        { src: '/media/proj/opinion/Screenshot from 2023-06-09 00-41-32.avif' },
+        { src: '/mi-portfolio/media/proj/opinion/dms-screenshot-1788861969985.avif', size: MediaSize.Full },
+        { src: '/mi-portfolio/media/proj/opinion/IMG_20230410_210139546.avif' },
+        { src: '/mi-portfolio/media/proj/opinion/Screenshot from 2023-06-08 16-12-02.avif' },
+        { src: '/mi-portfolio/media/proj/opinion/Screenshot from 2023-06-09 00-41-32.avif' },
 
       ]
     },
