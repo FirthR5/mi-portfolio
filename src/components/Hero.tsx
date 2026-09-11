@@ -4,12 +4,16 @@ import { useLang } from '../context/LanguageContext'
 import { contact, summary } from '../data/profile'
 import { site } from '../data/site'
 import meImg from '../assets/me.png'
-import cvPdf from '../assets/Fernando_Fernandez_Rios_CV.pdf'
 import EmailLink from './shared/EmailLink'
 import { MailIcon } from './shared/icons'
 
+const cvLinks: Record<string, string> = {
+  es: 'https://drive.proton.me/urls/NXPRYNQQJW#g6qbIH6VTEu9',
+  en: 'https://drive.proton.me/u/3/tlpRUj0Mr8Is0rfBYFNGxynrlpETO3I8jn0HvL251M2StFy6Zx3FJUlBvKLeMefZd4EPADCg4z6iOVGFGEsAVg==/file/3y4G7ZBFGF1cIDjFP8SCPNXczQHN-facYyDcAtCZDNrJ5QdaShZHgzi8CdNBjUEXdh0fkB4-DiiaurhCRpMkIQ==?r=%2Fshared-with-me',
+}
+
 export default function Hero() {
-  const { t } = useLang()
+  const { t, lang } = useLang()
   const [roleIndex, setRoleIndex] = useState(0)
 
   useEffect(() => {
@@ -36,7 +40,7 @@ export default function Hero() {
           {/* <p className="lead">{t(summary.objective)}</p> */}
 
           <div className="hero-actions">
-            <a className="btn btn-primary" href={cvPdf} download>
+            <a className="btn btn-primary" href={cvLinks[lang]} target="_blank" rel="noopener noreferrer">
               {t(contact.downloadCvLabel)}
             </a>
             <EmailLink
