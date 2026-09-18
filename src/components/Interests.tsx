@@ -12,8 +12,15 @@ export default function Interests() {
           {t({ es: 'Lo que me motiva fuera del trabajo.', en: 'What drives me outside of work.' })}
         </p>
 
+        <ul className="interests-list">
+          {interests.interests.map((item) => (
+            <li key={t(item)}>{t(item)}</li>
+          ))}
+        </ul>
+
+        <h3 className="hobbies-title">{t(interests.hobbiesHeading)}</h3>
         <div className="interests-grid">
-          {interests.items.map((item) => (
+          {interests.hobbies.map((item) => (
             <div className="card interest-card" key={t(item.title)}>
               <h4>{t(item.title)}</h4>
               <p>{t(item.description)}</p>

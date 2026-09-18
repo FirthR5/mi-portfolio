@@ -45,8 +45,8 @@ export const summary: Summary = {
   ],
   paragraph: {
     // Hola, me llamo Fernando.
-    es: "Bienvenido a mi sitio web. Soy Fernando, un Ingeniero en Sistemas que se especializa en el área de Desarrollo de Software con más de 2 años de experiencia en el que he trabajado en el desarrollo de aplicaciones móviles y sistemas Web (Full-Stack).",
-    en: "Welcome to my website. I'm Fernando, a Computer Systems Engineer specializing in Software Development with over 2 years of experience working on mobile applications and web systems (Full-Stack).",
+    es: "Bienvenido a mi sitio web. Soy Fernando, un Ingeniero en Sistemas que se especializa en el área de Desarrollo de Software con más de 3 años de experiencia en el que he trabajado en el desarrollo de aplicaciones móviles y sistemas Web (Full-Stack).",
+    en: "Welcome to my website. I'm Fernando, a Computer Systems Engineer specializing in Software Development with over 3 years of experience working on mobile applications and web systems (Full-Stack).",
   },
   objective: {
     es: 'Quiero sumarme a un equipo donde el software resuelva problemas de verdad, donde me reten cada día y donde cada producto lleve mi marca.',

@@ -650,7 +650,7 @@ img {
 }
 
 .job-evidence-btn {
-  margin-top: 16px;
+  margin: 8px 0 16px;
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -799,16 +799,22 @@ img {
    PROJECT MODAL (focus on a single project)
    ========================================================================== */
 
-.modal-backdrop {
+.modal-page {
   position: fixed;
   inset: 0;
   z-index: 100;
-  background: var(--overlay);
-  backdrop-filter: blur(4px);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 24px;
+}
+
+.modal-page-backdrop {
+  position: absolute;
+  inset: 0;
+  background: var(--overlay);
+  backdrop-filter: blur(4px);
+  overscroll-behavior: contain;
   animation: modal-fade 0.15s ease;
 }
 
@@ -821,7 +827,9 @@ img {
   }
 }
 
-.modal {
+.modal-page .modal {
+  position: relative;
+  z-index: 1;
   background: var(--bg);
   border: 1px solid var(--border);
   border-radius: 18px;
@@ -829,12 +837,15 @@ img {
   width: 100%;
   max-width: 900px;
   max-height: 88vh;
+  max-height: 88dvh;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
   padding: 28px;
   animation: modal-rise 0.18s ease;
 }
 
-.modal-wide {
+.modal-page .modal-wide {
   max-width: 1400px;
 }
 
@@ -846,6 +857,20 @@ img {
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .modal-page {
+    padding: 12px;
+    align-items: flex-start;
+  }
+
+  .modal-page .modal {
+    max-height: 100vh;
+    max-height: 100dvh;
+    padding: 20px;
+    border-radius: 14px;
   }
 }
 
@@ -903,6 +928,7 @@ img {
   border: 1px solid var(--border);
   background: #000;
   max-height: 70vh;
+  max-height: 70dvh;
 }
 
 .modal-media img {
@@ -1087,6 +1113,35 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 16px;
+}
+
+.interests-list {
+  display: grid;
+  gap: 10px;
+  padding: 0;
+  margin: 0 0 8px;
+  list-style: none;
+}
+
+.interests-list li {
+  position: relative;
+  padding-left: 22px;
+  font-size: 15px;
+  color: var(--text-muted);
+}
+
+.interests-list li::before {
+  content: '•';
+  position: absolute;
+  left: 4px;
+  color: var(--accent);
+  font-size: 18px;
+}
+
+.hobbies-title {
+  font-size: 20px;
+  color: var(--heading);
+  margin: 28px 0 16px;
 }
 
 .interest-card h4 {

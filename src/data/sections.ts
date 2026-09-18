@@ -1,15 +1,15 @@
 import type { Interests, Publications, Training } from './types'
 
 export const interests: Interests = {
-  heading: { es: 'Intereses & Hobbies', en: 'Interests & Hobbies' },
-  items: [
+  heading: { es: 'Intereses', en: 'Interests' },
+  interests: [
     {
-      title: { es: 'Software & Sistemas', en: 'Software & Systems' },
-      description: {
-        es: 'Programación, IT, sistemas y Desarrollo de Software, con especial interés en el desarrollo móvil.',
-        en: 'Programming, IT, systems and software development, with a special interest in mobile development.',
-      },
+      es: 'Programación, IT, sistemas y Desarrollo de Software, con especial interés en el desarrollo móvil.',
+      en: 'Programming, IT, systems and software development, with a special interest in mobile development.',
     },
+  ],
+  hobbiesHeading: { es: 'Hobbies', en: 'Hobbies' },
+  hobbies: [
     {
       title: { es: 'Ecosistema Linux', en: 'Linux Ecosystem' },
       description: {
@@ -22,13 +22,6 @@ export const interests: Interests = {
       description: {
         es: 'Me gusta mucho modificar aplicaciones móviles Open Source porque los puedo modificar a mi gusto y aportar a la comunidad.',
         en: 'I really enjoy modifying Open Source mobile applications because I can customize them to my liking and contribute to the community.',
-      },
-    },
-    {
-      title: { es: 'AI & Tooling', en: 'AI & Tooling' },
-      description: {
-        es: 'Despliegue de AI tooling self-hosted (Ollama), fundamentos de DNS, VPN y seguridad.',
-        en: 'Self-hosted AI tooling (Ollama), foundational DNS, VPN and security skills.',
       },
     },
     /*
@@ -45,10 +38,10 @@ export const interests: Interests = {
     },
     */
     {
-      title: { es: 'Reparación de Hardware', en: 'Hardware Repair', },
+      title: { es: 'Reparación de Hardware', en: 'Hardware Repair' },
       description: {
-        es: "En mis tiempos libres me gusta reparar celulares y laptops, normalmente lo mio.",
-        en: "In my free time I like to repair cell phones and laptops, usually my own.",
+        es: 'En mis tiempos libres me gusta reparar celulares y laptops, normalmente lo mío.',
+        en: 'In my free time I like to repair cell phones and laptops, usually my own.',
       },
     },
     {
@@ -58,7 +51,13 @@ export const interests: Interests = {
         en: "I really like Open Source and the free software community because I can read the source code, I can use their software without restrictions and I can contribute to the community. and also learn from other developers.",
       },
     },
-
+    {
+      title: { es: 'Self-Hosting (Raspberry Pi)', en: 'Self-Hosting (Raspberry Pi)' },
+      description: {
+        es: 'Self-hosting sobre Raspberry Pi: IA local (Ollama), servicios en contenedores con Docker, scrapers de automatización y fundamentos de DNS, VPN y seguridad.',
+        en: 'Self-hosting on a Raspberry Pi: local AI (Ollama), containerized services with Docker, automation scrapers, and foundational DNS, VPN and security.',
+      },
+    },
   ],
 }
 

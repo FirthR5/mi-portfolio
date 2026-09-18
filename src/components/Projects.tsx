@@ -1,8 +1,9 @@
-import { useEffect, useState, type MouseEvent } from 'react'
+import { useState } from 'react'
 import { useLang } from '../context/LanguageContext'
 import { projects } from '../data/projects'
 import { isVideo } from './shared/media'
 import TechTag from './shared/TechTag'
+import { Modal } from './shared/Modal'
 import type { Project } from '../data/types'
 
 function sortByDateDesc(a: string, b: string) {
@@ -23,23 +24,6 @@ export default function Projects({
   )
 
   const close = () => setActive(null)
-
-  useEffect(() => {
-    if (!active) return
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') close()
-    }
-    document.addEventListener('keydown', onKey)
-    document.body.style.overflow = 'hidden'
-    return () => {
-      document.removeEventListener('keydown', onKey)
-      document.body.style.overflow = ''
-    }
-  }, [active])
-
-  const onBackdropClick = (e: MouseEvent<HTMLDivElement>) => {
-    if (e.target === e.currentTarget) close()
-  }
 
   const renderTech = (technologies: string) =>
     technologies
@@ -93,67 +77,56 @@ export default function Projects({
       </div>
 
       {active && (
-        <div className="modal-backdrop" onClick={onBackdropClick}>
-          <div className="modal" role="dialog" aria-modal="true">
-            <div className="modal-head">
-              <div>
-                <h3>{t(active.name)}</h3>
-                <div className="project-meta">
-                  <span className="category">{t(active.category)}</span>
-                  <span className="period">{t(active.period)}</span>
-                </div>
+        <Modal onClose={close}>
+          <div className="modal-head">
+            <div>
+              <h3>{t(active.name)}</h3>
+              <div className="project-meta">
+                <span className="category">{t(active.category)}</span>
+                <span className="period">{t(active.period)}</span>
               </div>
-              <button
-                type="button"
-                className="modal-close"
-                onClick={close}
-                aria-label="Close"
-              >
-                ✕
-              </button>
             </div>
-
-            {active.links &&
-              active.links.map((link) => (
-                <a key={link.url} href={link.url} target="_blank" rel="noreferrer">
-                  {link.label}
-                </a>
-              ))}
-            {active.repoUrl && (
-              <a className="project-repo" href={active.repoUrl} target="_blank" rel="noreferrer">
-                {t({ es: 'Repositorio ↗', en: 'Repository ↗' })}
-              </a>
-            )}
-
-            <ul className="modal-desc">
-              {active.description.map((d, i) => (
-                <li key={i}>{t(d)}</li>
-              ))}
-            </ul>
-
-            {active.media && active.media.length > 0 && (
-              <div className={`modal-media${active.media.length > 1 ? ' multi' : ''}`}>
-                {active.media.map((m) =>
-                  isVideo(m.src) ? (
-                    <video key={m.src} controls autoPlay preload="metadata" src={m.src} />
-                  ) : (
-                    <img key={m.src} src={m.src} alt={t(active.name)} loading="lazy" />
-                  ),
-                )}
-              </div>
-            )}
-
-            <div className="project-tech skill-tags">{renderTech(active.technologies)}</div>
-
-            <button
-              type="button"
-              className="modal-portfolio-btn"
-              onClick={onOpenShowcase}
-            >
-              {t({ es: 'Ver portafolio', en: 'View portfolio' })}
+            <button type="button" className="modal-close" onClick={close} aria-label="Close">
+              ✕
             </button>
           </div>
-        </div>
+
+          {active.links &&
+            active.links.map((link) => (
+              <a key={link.url} href={link.url} target="_blank" rel="noreferrer">
+                {link.label}
+              </a>
+            ))}
+          {active.repoUrl && (
+            <a className="project-repo" href={active.repoUrl} target="_blank" rel="noreferrer">
+              {t({ es: 'Repositorio ↗', en: 'Repository ↗' })}
+            </a>
+          )}
+
+          <ul className="modal-desc">
+            {active.description.map((d, i) => (
+              <li key={i}>{t(d)}</li>
+            ))}
+          </ul>
+
+          {active.media && active.media.length > 0 && (
+            <div className={`modal-media${active.media.length > 1 ? ' multi' : ''}`}>
+              {active.media.map((m) =>
+                isVideo(m.src) ? (
+                  <video key={m.src} controls autoPlay preload="metadata" src={m.src} />
+                ) : (
+                  <img key={m.src} src={m.src} alt={t(active.name)} loading="lazy" />
+                ),
+              )}
+            </div>
+          )}
+
+          <div className="project-tech skill-tags">{renderTech(active.technologies)}</div>
+
+          <button type="button" className="modal-portfolio-btn" onClick={onOpenShowcase}>
+            {t({ es: 'Ver portafolio', en: 'View portfolio' })}
+          </button>
+        </Modal>
       )}
     </section>
   )

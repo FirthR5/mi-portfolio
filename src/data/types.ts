@@ -172,7 +172,9 @@ export interface Interest {
 
 export interface Interests {
   heading: LocalizedText
-  items: Interest[]
+  interests: LocalizedText[]
+  hobbiesHeading: LocalizedText
+  hobbies: Interest[]
 }
 
 export interface Publication {
