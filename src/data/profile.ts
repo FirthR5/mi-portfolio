@@ -248,7 +248,6 @@ export const experience: Experience = {
                 { src: '/mi-portfolio/media/jobs/Alset/stadio/Mobile/BeforeAfter/Notifications1Before.avif', caption: { es: "Notificationes (Antes)", en: "Notifications (Before)" }, badge: { es: "Antes", en: "Before" } },
                 { src: '/mi-portfolio/media/jobs/Alset/stadio/Mobile/BeforeAfter/Profile1After.avif', caption: { es: "Perfil (Después)", en: "Profile (After)" }, badge: { es: "Después", en: "After" } },
                 { src: '/mi-portfolio/media/jobs/Alset/stadio/Mobile/BeforeAfter/Profile1Before.avif', caption: { es: "Perfil (Antes)", en: "Profile (Before)" }, badge: { es: "Antes", en: "Before" } },
-                { src: '/mi-portfolio/media/jobs/Alset/stadio/Mobile/BeforeAfter/Profile2Before.avif', caption: { es: "Perfil (Antes)", en: "Profile (Before)" }, badge: { es: "Antes", en: "Before" } },
                 { src: '/mi-portfolio/media/jobs/Alset/stadio/Mobile/BeforeAfter/Chat1After.avif', caption: { es: "Chat (Después)", en: "Chat (After)" }, badge: { es: "Después", en: "After" } },
                 { src: '/mi-portfolio/media/jobs/Alset/stadio/Mobile/BeforeAfter/Chat1Before.avif', caption: { es: "Chat (Antes)", en: "Chat (Before)" }, badge: { es: "Antes", en: "Before" } },
               ]

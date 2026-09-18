@@ -3,6 +3,7 @@ import { useLang } from '../../context/LanguageContext'
 import { MediaSize, type MediaItem as MediaEntry, type MediaLayout } from '../../data/types'
 import { isVideo } from './media'
 import { MediaSlider } from './MediaSlider'
+import { BeforeAfterGallery } from './BeforeAfterSlider'
 
 export interface ZoomRequest {
   src: string
@@ -179,6 +180,9 @@ export function MediaGallery({
   const images = items.filter((item) => !isVideo(item.src)).map((item) => item.src)
 
   if (layout === 'slides' || layout === 'before-after') {
+    if (layout === 'before-after') {
+      return <BeforeAfterGallery items={items} defaultAlt={defaultAlt} />
+    }
     return <MediaSlider items={items} defaultAlt={defaultAlt} onZoom={onZoom} />
   }
 
