@@ -3,6 +3,7 @@ import { useLang } from '../context/LanguageContext'
 import { projects } from '../data/projects'
 import { isVideo } from './shared/media'
 import TechTag from './shared/TechTag'
+import { isLanguage } from '../lib/tech'
 import { Modal } from './shared/Modal'
 import type { Project } from '../data/types'
 
@@ -18,6 +19,7 @@ export default function Projects({
   const { t } = useLang()
   const [active, setActive] = useState<Project | null>(null)
   const [expanded, setExpanded] = useState<Record<string, boolean>>({})
+  const [techExpanded, setTechExpanded] = useState<Record<string, boolean>>({})
 
   const sorted = [...projects.items].sort((a, b) => sortByDateDesc(a.startDate, b.startDate))
   const openSourceSorted = [...projects.openSource.items].sort((a, b) =>
@@ -29,16 +31,26 @@ export default function Projects({
     const key = t(project.name)
     setExpanded((cur) => ({ ...cur, [key]: !cur[key] }))
   }
+  const toggleTech = (project: Project) => {
+    const key = t(project.name)
+    setTechExpanded((cur) => ({ ...cur, [key]: !cur[key] }))
+  }
 
-  const renderTech = (technologies: string) =>
-    technologies
+  const renderTech = (technologies: string) => {
+    const techs = technologies
       .split(',')
       .map((t) => t.trim())
       .filter(Boolean)
-      .map((tech) => <TechTag key={tech} name={tech} />)
+    const order = (tech: string) => (isLanguage(tech) ? 0 : 1)
+    return techs
+      .map((tech, i) => ({ tech, i }))
+      .sort((a, b) => order(a.tech) - order(b.tech) || a.i - b.i)
+      .map(({ tech }) => <TechTag key={tech} name={tech} />)
+  }
 
   const renderCard = (project: Project) => {
     const isOpen = expanded[t(project.name)]
+    const techOpen = techExpanded[t(project.name)]
     return (
       <div
         className="card project-card"
@@ -73,7 +85,23 @@ export default function Projects({
               : t({ es: `Ver más (${project.description.length - 1}) ▼`, en: `Show more (${project.description.length - 1}) ▼` })}
           </button>
         )}
-        <div className="project-tech skill-tags">{renderTech(project.technologies)}</div>
+        <div className="project-tech">
+          <div className={`skill-tags${techOpen ? '' : ' skill-tags--scroll'}`}>
+            {renderTech(project.technologies)}
+          </div>
+          <button
+            type="button"
+            className="tech-expand-btn"
+            aria-hidden="true"
+            tabIndex={-1}
+            onClick={(e) => {
+              e.stopPropagation()
+              toggleTech(project)
+            }}
+          >
+            {techOpen ? '▲' : '▼'}
+          </button>
+        </div>
         {project.media && project.media.length > 0 && (
           <span className="project-view-demo">
             {t({ es: 'Ver demos ▶', en: 'View demos ▶' })}
@@ -150,7 +178,23 @@ export default function Projects({
             </div>
           )}
 
-          <div className="project-tech skill-tags">{renderTech(active.technologies)}</div>
+          <div className="project-tech">
+            <div className={`skill-tags${techExpanded[t(active.name)] ? '' : ' skill-tags--scroll'}`}>
+              {renderTech(active.technologies)}
+            </div>
+            <button
+              type="button"
+              className="tech-expand-btn"
+              aria-hidden="true"
+              tabIndex={-1}
+              onClick={(e) => {
+                e.stopPropagation()
+                toggleTech(active)
+              }}
+            >
+              {techExpanded[t(active.name)] ? '▲' : '▼'}
+            </button>
+          </div>
 
           <button type="button" className="modal-portfolio-btn" onClick={onOpenShowcase}>
             {t({ es: 'Ver portafolio', en: 'View portfolio' })}

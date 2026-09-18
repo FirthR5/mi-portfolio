@@ -817,6 +817,9 @@ img {
   margin-top: auto;
   padding-top: 10px;
   border-top: 1px dashed var(--border);
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 /* ============================================================================
@@ -1043,6 +1046,47 @@ img {
   background: color-mix(in srgb, var(--tag-primary) 88%, #000);
   border-color: var(--tag-primary);
   color: var(--tag-primary-text);
+}
+
+.skill-tags--scroll {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+  min-width: 0;
+}
+
+.skill-tags--scroll .skill-tag {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.skill-tags--scroll::-webkit-scrollbar {
+  height: 5px;
+}
+
+.skill-tags--scroll::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 999px;
+}
+
+.tech-expand-btn {
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+  background: var(--surface-alt);
+  color: var(--text-muted);
+  border-radius: 8px;
+  padding: 6px 9px;
+  font-size: 11px;
+  line-height: 1;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.tech-expand-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
 }
 
 /* ============================================================================
