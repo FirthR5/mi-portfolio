@@ -11,8 +11,8 @@ export const projects: Projects = {
       },
       startDate: '2025-11',
       period: {
-        es: 'Noviembre – Diciembre 2025 (Proyecto Comercial)',
-        en: 'November – December 2025 (Commercial Project)',
+        es: 'Noviembre – Diciembre 2025',
+        en: 'November – December 2025',
       },
       category: { es: 'Proyecto Comercial', en: 'Commercial Project' },
       type: ProjectType.Commercial,
