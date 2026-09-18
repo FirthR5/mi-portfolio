@@ -95,7 +95,7 @@ export default function Navbar() {
                 aria-expanded={open === 'sections'}
                 onClick={() => toggle('sections')}
               >
-                {lang === 'es' ? 'Secciones' : 'Sections'}
+                {lang === 'es' ? 'Inicio' : 'Home'}
                 <span className="caret">▾</span>
               </button>
               {open === 'sections' && (
@@ -216,10 +216,8 @@ export default function Navbar() {
         <div className="nav-mobile">
           <div className="container">
             <ul>
-              <li>
-                <a href="/" className="nav-mobile-home" onClick={goTop}>
-                  {lang === 'es' ? 'Inicio' : 'Home'}
-                </a>
+              <li className="nav-mobile-label">
+                {lang === 'es' ? 'Inicio' : 'Home'}
               </li>
               {navLinks.map((link) => (
                 <li key={link.id}>
@@ -234,7 +232,7 @@ export default function Navbar() {
                   </a>
                 </li>
               ))}
-              <li className="nav-mobile-label">
+              <li className="nav-mobile-label nav-mobile-label--section">
                 {lang === 'es' ? 'Portafolio' : 'Portfolio'}
               </li>
               {portfolioLinks.map((link) => (
