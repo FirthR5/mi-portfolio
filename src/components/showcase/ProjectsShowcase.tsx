@@ -47,7 +47,7 @@ function ShowcaseProject({
             className="job-evidence-btn"
             onClick={() => setDescOpen(true)}
           >
-            {t({ es: 'Ver descripción', en: 'View description' })}
+            {t({ es: 'Ver más información', en: 'More info' })}
           </button>
         )}
 
