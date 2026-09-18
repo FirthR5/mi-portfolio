@@ -17,6 +17,7 @@ export default function Projects({
 }) {
   const { t } = useLang()
   const [active, setActive] = useState<Project | null>(null)
+  const [expanded, setExpanded] = useState<Record<string, boolean>>({})
 
   const sorted = [...projects.items].sort((a, b) => sortByDateDesc(a.startDate, b.startDate))
   const openSourceSorted = [...projects.openSource.items].sort((a, b) =>
@@ -24,6 +25,10 @@ export default function Projects({
   )
 
   const close = () => setActive(null)
+  const toggleId = (project: Project) => {
+    const key = t(project.name)
+    setExpanded((cur) => ({ ...cur, [key]: !cur[key] }))
+  }
 
   const renderTech = (technologies: string) =>
     technologies
@@ -32,27 +37,51 @@ export default function Projects({
       .filter(Boolean)
       .map((tech) => <TechTag key={tech} name={tech} />)
 
-  const renderCard = (project: Project) => (
-    <button
-      type="button"
-      className="card project-card"
-      key={t(project.name)}
-      onClick={() => setActive(project)}
-    >
-      <h3>{t(project.name)}</h3>
-      <div className="project-meta">
-        <span className="category">{t(project.category)}</span>
-        <span className="period">{t(project.period)}</span>
+  const renderCard = (project: Project) => {
+    const isOpen = expanded[t(project.name)]
+    return (
+      <div
+        className="card project-card"
+        key={t(project.name)}
+        onClick={() => setActive(project)}
+      >
+        <h3>{t(project.name)}</h3>
+        <div className="project-meta">
+          <span className="category">{t(project.category)}</span>
+          <span className="period">{t(project.period)}</span>
+        </div>
+        {!isOpen ? (
+          <p className="project-preview">{t(project.description[0])}</p>
+        ) : (
+          <ul className="project-desc">
+            {project.description.map((d, i) => (
+              <li key={i}>{t(d)}</li>
+            ))}
+          </ul>
+        )}
+        {project.description.length > 1 && (
+          <button
+            type="button"
+            className="job-evidence-btn project-more-btn"
+            onClick={(e) => {
+              e.stopPropagation()
+              toggleId(project)
+            }}
+          >
+            {isOpen
+              ? t({ es: 'Ver menos ▲', en: 'Show less ▲' })
+              : t({ es: `Ver más (${project.description.length - 1}) ▼`, en: `Show more (${project.description.length - 1}) ▼` })}
+          </button>
+        )}
+        <div className="project-tech skill-tags">{renderTech(project.technologies)}</div>
+        {project.media && project.media.length > 0 && (
+          <span className="project-view-demo">
+            {t({ es: 'Ver demos ▶', en: 'View demos ▶' })}
+          </span>
+        )}
       </div>
-      <p className="project-preview">{t(project.description[0])}</p>
-      <div className="project-tech skill-tags">{renderTech(project.technologies)}</div>
-      {project.media && project.media.length > 0 && (
-        <span className="project-view-demo">
-          {t({ es: 'Ver demos ▶', en: 'View demos ▶' })}
-        </span>
-      )}
-    </button>
-  )
+    )
+  }
 
   return (
     <section id="projects" className="section">

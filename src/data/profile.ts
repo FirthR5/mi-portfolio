@@ -138,8 +138,8 @@ export const experience: Experience = {
           },
           bullets: [
             {
-              es: 'Desarrollé nuevas funcionalidades, corregí incidencias y mejoré la estabilidad de una app móvil social de apuestas con más de 70 mil usuarios en Android e iOS.',
-              en: 'Developed new features, fixed bugs and improved the stability of a social betting mobile app with more than 70k users on Android and iOS.',
+              es: 'Trabajé full-stack en una plataforma social de apuestas con 70 mil+ usuarios: móvil, web y backend, aportando funcionalidades, APIs y estabilidad en toda la plataforma.',
+              en: 'Worked full-stack on a social betting platform with 70k+ users — mobile, web, and backend — delivering features, APIs, and stability across the stack.',
             },
             {
               es: 'Integré Firebase y Appsflyer para analítica y mensajería, implementé soporte multilingüe y optimicé SignalR para el chat y la sincronización en tiempo real de saldo, estado de apuestas y otros datos críticos.',
@@ -190,12 +190,12 @@ export const experience: Experience = {
           },
           bullets: [
             {
-              es: 'Diseñé y desarrollé toda una aplicación web en React 18 desde cero, replicando funcionalidades clave de la app móvil social existente. Implementé lógica de negocio, navegación y estado global, con autenticación JWT, tiempo real con SignalR, web push notifications y autorización por perfiles; usé Lovable para acelerar el prototipado inicial de interfaces.',
-              en: "Designed and developed an end-to-end React 18 web app from scratch, replicating key features of the existing social mobile app. Fully implemented business logic, navigation flows and global state, including JWT authentication, SignalR real-time communication, web push notifications and profile-based authorization; used Lovable to accelerate early UI prototyping.",
+              es: 'Diseñé y desarrollé una app web en React 18 desde cero, replicando la app móvil: lógica de negocio, estado global, autenticación JWT, tiempo real con SignalR y notificaciones push; usé Lovable para prototipar las interfaces.',
+              en: "Designed and built a React 18 web app from scratch replicating the mobile app: business logic, global state, JWT auth, SignalR real-time and push notifications; used Lovable for early UI prototyping.",
             },
             {
-              es: 'En un equipo de 4 desarrolladores, colaboré en el desarrollo de un sistema web multi-tenant para gestión de inventario, compras, ventas y envíos. Trabajé en Web API y Frontend con React, cubriendo: onboarding de merchants, gestión de órdenes, control de inventario, flujo de devoluciones e incidencias, notificaciones, webhooks con Zapier y Shopify, y utilicé OData.',
-              en: 'As part of a team of 4 developers, I collaborated in the development of a multi-tenant web system for inventory, purchasing, sales and shipping management. I worked on Web API and React frontend, covering: merchant onboarding, purchase and sales order management, inventory control, returns and incidents flow, notifications, webhooks with Zapier and Shopify, and used OData.',
+              es: 'En un equipo de 4, colaboré en un sistema web multi-tenant para inventario, compras, ventas y envíos (Web API + React): onboarding de merchants, gestión de órdenes, devoluciones e incidencias, notificaciones y webhooks con Zapier y Shopify; usé OData.',
+              en: 'On a team of 4, collaborated on a multi-tenant web system for inventory, purchasing, sales and shipping (Web API + React): merchant onboarding, order management, returns and incidents, notifications and Zapier/Shopify webhooks; used OData.',
             },
             {
               es: 'Desarrollé y mejoré paneles de Backoffice con ASP.NET MVC, integrando OData y componentes de Syncfusion.',
@@ -337,8 +337,16 @@ description: {
           title: null,
           bullets: [
             {
-              es: 'Contribuí al desarrollo de dos aplicaciones: un sistema web para cambios de precios y una aplicación Android para inventario de activos mediante códigos QR. Implementé la importación de datos desde archivos CSV a la base de datos, la visualización y edición de la información, así como ciclos de autorización y flujos de aprobación de cambios, junto con la funcionalidad de escaneo de códigos QR.',
-              en: 'Contributed to the development of two applications: a web platform for product price updates and an Android app for QR-based asset inventory. Implemented CSV-to-database import flows, data visualization and editing features, approval workflows and QR scanning.',
+              es: 'Desarrollé dos aplicaciones: un sistema web para cambios de precios y una app Android para inventario de activos por código QR.',
+              en: 'Built two applications: a web system for price changes and an Android app for QR-based asset inventory.',
+            },
+            {
+              es: 'En el sistema web implementé la importación de datos desde CSV, la visualización y edición de la información, y ciclos de autorización con flujos de aprobación de cambios.',
+              en: 'On the web system I implemented CSV data imports, data visualization and editing, and authorization cycles with change approval workflows.',
+            },
+            {
+              es: 'En la app Android desarrollé el inventario de activos mediante el escaneo de códigos QR.',
+              en: 'On the Android app I built asset inventory through QR code scanning.',
             },
           ],
         },
@@ -398,8 +406,8 @@ description: {
           title: null,
           bullets: [
             {
-              es: 'Formé parte de un equipo de desarrollo donde diseñamos y construimos sistemas desde cero para la institución, varios de ellos puestos en producción y utilizados en la operación diaria. Los más relevantes: un sistema de exámenes de egreso de inglés, un sistema de asistencia y agenda de visitas, un sistema de encuesta de satisfacción y un sistema de control académico.',
-              en: 'Worked as part of the development team to design and build systems from scratch for the institution, several of which were deployed and actively used in daily operations. The most relevant were an English graduation exam system, an attendance and visit scheduling system, a student satisfaction survey system and an academic control system.',
+              es: 'Formé parte del equipo que diseñó y construyó sistemas desde cero, varios en producción. Los más relevantes: exámenes de egreso de inglés, asistencia y agenda de visitas, encuestas de satisfacción y control académico.',
+              en: 'Part of a team that designed and built systems from scratch, several in production. Most relevant: English graduation exams, attendance and visit scheduling, satisfaction surveys, and academic control.',
             },
             {
               es: 'Mejoré la mantenibilidad y continuidad operativa de un sistema de exámenes de egreso de inglés reconstruyéndolo desde cero en ASP.NET MVC (.NET 7) a partir de un sistema legado en ASP.NET Web Forms.',

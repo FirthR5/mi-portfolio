@@ -79,8 +79,12 @@ export const projects: Projects = {
       type: ProjectType.Personal,
       description: [
         {
-          es: 'Desarrollé un sistema de gestión de gimnasio para administrar membresías, ventas e inventario. Funcionalidades: registro de nuevos miembros y membresías, seguimiento de asistencia según el tipo de membresía, y gestión de inventario (suplementos y bebidas) y ventas. Usa el patrón de arquitectura MVVM, Background Tasks y triggers de base de datos, con Entity Framework.',
-          en: 'Developed a gym management system to streamline member management, sales, and inventory. Functions: register new members and memberships, track attendance based on membership type, and manage inventory (supplements and beverages) and sales. Uses the MVVM architecture pattern, Background Tasks and DB triggers, fully with Entity Framework.',
+          es: 'Sistema de gestión de gimnasio: membresías, seguimiento de asistencia, inventario y ventas.',
+          en: 'Gym management system: memberships, attendance tracking, inventory, and sales.',
+        },
+        {
+          es: 'Funcionalidades: registro de nuevos miembros y membresías, asistencia según el tipo de membresía, e inventario (suplementos y bebidas) y ventas. Usa MVVM, Background Tasks, triggers de base de datos y Entity Framework.',
+          en: 'Features: member and membership registration, attendance by membership type, and inventory (supplements and beverages) and sales. Uses MVVM, Background Tasks, DB triggers, and Entity Framework.',
         },
       ],
       technologies: 'C#, SQL Server, WPF XAML, Entity Framework',

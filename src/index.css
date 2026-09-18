@@ -763,6 +763,24 @@ img {
   font-size: 15px;
   color: var(--text);
   margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.project-desc {
+  margin: 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.project-more-btn {
+  align-self: flex-start;
+  padding: 6px 10px;
+  font-size: 13px;
 }
 
 .project-view-demo {
