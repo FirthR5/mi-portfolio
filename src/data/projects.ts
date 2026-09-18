@@ -18,12 +18,16 @@ export const projects: Projects = {
       type: ProjectType.Commercial,
       description: [
         {
-          es: 'Desarrollé una plataforma completa de gestión para un negocio (handyman). El sistema administra citas, trabajos con estados y pagos, cotizaciones, facturas, clientes y evidencias fotográficas, todo expuesto a través de una API REST segura con autenticación.',
-          en: 'Built a full management platform for a handyman business. The system manages appointments, jobs with statuses and payments, quotes, invoices, clients, and photo evidence, all exposed through a secure REST API with authentication.',
+          es: 'Sistema completo de gestión para un negocio de servicios: citas, trabajos, clientes y pagos.',
+          en: 'Complete management system for a service business: appointments, jobs, clients, and payments.',
         },
         {
-          es: 'Incluye un panel con métricas (trabajos por semana, pagos pendientes, pipeline), firma digital del cliente al terminar trabajos, y seguimiento de pagos y cobros.',
-          en: 'Includes a dashboard with metrics (jobs per week, pending payments, pipeline), digital client signatures when finishing jobs, and payment/collection tracking.',
+          es: 'Administra citas, trabajos con estados y pagos, cotizaciones, facturas, clientes y evidencias fotográficas, expuesto a través de una API REST segura.',
+          en: 'Manages appointments, jobs with statuses and payments, quotes, invoices, clients, and photo evidence, exposed through a secure REST API.',
+        },
+        {
+          es: 'Panel con métricas, firma digital del cliente al terminar trabajos y seguimiento de pagos.',
+          en: 'Metrics dashboard, digital client signatures when finishing jobs, and payment tracking.',
         },
       ],
       technologies: '.NET 8, C#, Entity Framework Core, SQL Server, React, TypeScript, Tailwind CSS, shadcn-ui, JWT',
@@ -50,8 +54,20 @@ export const projects: Projects = {
       type: ProjectType.College,
       description: [
         {
-          es: 'Desarrollé un sistema de gestión de restaurante que agiliza los pedidos, pagos y tareas administrativas. Los meseros toman pedidos en tablets mediante la WebApp, permitiendo modificaciones y cancelaciones; los pedidos fluyen a la cocina, donde los chefs marcan el progreso. Los administradores acceden a datos de rendimiento del personal y platos populares, y pueden administrar el menú.',
-          en: 'Built a restaurant management program to streamline orders, payments, and admin tasks. Waiters take orders on their tablets using the WebApp, allowing modifications and cancellations. Orders flow to the kitchen for preparation, where chefs track progress. Admins access employee performance and popular dish data, and can manage menus.',
+          es: 'Sistema de pedidos para restaurante: mesero, cocina y administración en una sola plataforma.',
+          en: 'Restaurant ordering system: waiters, kitchen, and administration in one platform.',
+        },
+        {
+          es: 'Los meseros toman pedidos en tablets, con modificaciones y cancelaciones.',
+          en: 'Waiters take orders on tablets, with modifications and cancellations.',
+        },
+        {
+          es: 'Los pedidos fluyen a la cocina y los chefs marcan su progreso.',
+          en: 'Orders flow to the kitchen where chefs track progress.',
+        },
+        {
+          es: 'Los administradores ven rendimiento del personal, platos populares y administran el menú.',
+          en: 'Admins see staff performance, popular dishes, and manage the menu.',
         },
       ],
       technologies: 'C#, SQL Server, Windows Forms, ASP.NET, JavaScript, Entity Framework',
@@ -108,8 +124,12 @@ export const projects: Projects = {
       type: ProjectType.Personal,
       description: [
         {
-          es: 'Desarrollé una herramienta web de monitoreo de precios para uso personal utilizando técnicas de Web Scraping para recopilar diariamente datos de productos en Mercado Libre, Soriana y Coppel.',
-          en: 'Developed a web-based price monitoring tool using Web Scraping to collect daily product data from Mercado Libre, Soriana, and Coppel.',
+          es: 'Monitorea el precio de productos a diario para detectar descuentos.',
+          en: 'Monitors product prices daily to spot discounts.',
+        },
+        {
+          es: 'Web Scraping para recopilar datos de Mercado Libre, Soriana y Coppel.',
+          en: 'Web scraping to collect data from Mercado Libre, Soriana, and Coppel.',
         },
         {
           es: 'Objetivo: identificar descuentos y determinar el mejor precio disponible.',
@@ -203,7 +223,7 @@ export const projects: Projects = {
             en: 'Added support for Nitro "AN515-53" model, enabling the driver to work on machines like mine.',
           },
         ],
-        technologies: 'Python (Linux kernel drivers)',
+        technologies: 'Python',
       },
       {
         name: {
@@ -224,7 +244,7 @@ export const projects: Projects = {
             en: 'Identified and fixed a bug on tablet devices, improving user experience.',
           },
         ],
-        technologies: 'Kotlin (Android Development)',
+        technologies: 'Kotlin',
       },
     ],
   },

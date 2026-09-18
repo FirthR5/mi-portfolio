@@ -71,6 +71,7 @@ export default function Projects({
             ))}
           </ul>
         )}
+        {/*
         {project.description.length > 1 && (
           <button
             type="button"
@@ -85,22 +86,29 @@ export default function Projects({
               : t({ es: `Ver más (${project.description.length - 1}) ▼`, en: `Show more (${project.description.length - 1}) ▼` })}
           </button>
         )}
+        */}
         <div className="project-tech">
           <div className={`skill-tags${techOpen ? '' : ' skill-tags--scroll'}`}>
             {renderTech(project.technologies)}
           </div>
-          <button
-            type="button"
-            className="tech-expand-btn"
-            aria-hidden="true"
-            tabIndex={-1}
-            onClick={(e) => {
-              e.stopPropagation()
-              toggleTech(project)
-            }}
-          >
-            {techOpen ? '▲' : '▼'}
-          </button>
+          {project.technologies.split(',').length > 3 && (
+
+            <button
+              type="button"
+              className="tech-expand-btn"
+              aria-hidden="true"
+              tabIndex={-1}
+              onClick={(e) => {
+                e.stopPropagation()
+                toggleTech(project)
+              }}
+            >
+              {techOpen ? '▲' : '▼'}
+            </button>
+
+          )
+          }
+
         </div>
         {project.media && project.media.length > 0 && (
           <span className="project-view-demo">

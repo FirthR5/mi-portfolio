@@ -24,8 +24,8 @@ export default function Contact() {
         </h2>
         <p className="section-subtitle">
           {t({
-            es: '¿Quieres trabajar conmigo o tienes alguna pregunta? ¡Escríbeme!',
-            en: 'Want to work with me or have a question? Reach out!',
+            es: 'Lugares donde puedes contactarme.',
+            en: 'Contact me through these platforms.',
           })}
         </p>
 

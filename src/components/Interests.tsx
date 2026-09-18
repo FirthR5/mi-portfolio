@@ -18,6 +18,7 @@ export default function Interests() {
           ))}
         </ul>
 
+        <br/>
         <h3 className="hobbies-title">{t(interests.hobbiesHeading)}</h3>
         <div className="interests-grid">
           {interests.hobbies.map((item) => (
