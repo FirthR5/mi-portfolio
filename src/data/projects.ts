@@ -57,8 +57,8 @@ export const projects: Projects = {
       technologies: 'C#, SQL Server, Windows Forms, ASP.NET, JavaScript, Entity Framework',
       mediaLayout: 'slides',
       showcaseComment: {
-        es: 'Flujo completo de pedidos: mesero, cocina y caja, en videoclips.',
-        en: 'Full ordering flow — waiter, kitchen, and cash register — in clips.',
+        es: 'Recorrido del pedido de principio a fin: mesero, cocina y caja.',
+        en: 'End-to-end order journey: waiter, kitchen, and cash register.',
       },
       media: [
         { src: '/mi-portfolio/media/poS/WorkFlow_Admin.mp4', size: MediaSize.Full },
@@ -85,8 +85,8 @@ export const projects: Projects = {
       ],
       technologies: 'C#, SQL Server, WPF XAML, Entity Framework',
       showcaseComment: {
-        es: 'Membresías, asistencia, inventario y ventas en una app de escritorio.',
-        en: 'Memberships, attendance, inventory, and sales in a desktop app.',
+        es: 'Sistema de gestión para gimnasios: membresías, asistencia, inventario y ventas.',
+        en: 'Gym management system: memberships, attendance, inventory, and sales.',
       },
       media: [{ src: '/mi-portfolio/media/gym/SecondProject.mp4', size: MediaSize.Full }],
     },
@@ -115,8 +115,8 @@ export const projects: Projects = {
       technologies: 'Python, Django, Beautiful Soup 4, SQLite, Design Patterns (Strategy, Repository)',
       mediaLayout: 'hero-strip',
       showcaseComment: {
-        es: 'Precios diarios por web scraping desde Mercado Libre, Soriana y Coppel.',
-        en: 'Daily prices via web scraping from Mercado Libre, Soriana, and Coppel.',
+        es: 'Monitoreo de precios diario vía web scraping en Mercado Libre, Soriana y Coppel.',
+        en: 'Daily price monitoring via web scraping across Mercado Libre, Soriana, and Coppel.',
       },
       media: [
         { src: '/mi-portfolio/media/proj/tracker/code-project.avif', size: MediaSize.Full },

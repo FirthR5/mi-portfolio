@@ -214,8 +214,8 @@ export const experience: Experience = {
           content: [
             {
               description: {
-                es: "Durante este proyecto estuve realizando muchas cosas como mencione en la sección de \"Experiencia Profesional\", pero aquí te muestro capturas de como quedo la aplicación durante mi tiempo. Primero comenzando como quedo la aplicación en diferentes secciones.",
-                en: "In this project I was doing many things as I mention in the \"Experience\" section, but here I show you screenshots of how the application turned out during my time. First starting with how the application turned out."
+                es: "Aquí te muestro capturas de las diferentes secciones de la aplicación móvil durante el tiempo que estuve trabajando en ella.",
+                en: "I'm going to show you some screenshots of the different sections of the mobile application during the time I was working on it."
               },
               layout: 'wide',
               items: [
@@ -239,8 +239,8 @@ export const experience: Experience = {
 
             {
               description: {
-                es: "Continuamos... Algo que hice fue rediseñar y optimizar la aplicación para hacerlo moderno. Aquí una muestra del rediseño del antes y después (cada diapositiva está etiquetada como Antes o Después).",
-                en: "One of the things I did was redesign and optimize the app to make it modern. Here's a sample of the before and after redesign I did. Each slide is labeled as Before or After."
+                es: "Modernización total de la interfaz. Compara antes y después arrastrando el slider.",
+                en: "Complete interface modernization. Compare before and after by dragging the slider.",
               },
               layout: 'before-after',
               items: [
@@ -262,8 +262,8 @@ export const experience: Experience = {
           content: [
             {
               description: {
-                es: "También recreé completamente la aplicación pero ahora para que estuviera en la Web. A continuación les muestro algunas capturas de pantalla que hice de como se ve la aplicación en la Web.",
-                en: "Later I completely recreated the application but now for the Web. Below I show you some screenshots I took of how the application looks on the Web.",
+                es: "La misma app, ahora para la Web: recreación completa en React con la misma experiencia de usuario.",
+                en: "The same app, now for the Web: a full React recreation with the same user experience.",
               },
               layout: 'wide',
               items: [
@@ -279,9 +279,9 @@ export const experience: Experience = {
               ]
             },
             {
-              description: {
-                es: "React Native: Para finalizar también readapte la app pero ahora usando React Native para móvil (Nota: no confundir con React web). Aquí algunas capturas de pantalla de como se ve la app en React Native.",
-                en: ""
+description: {
+                es: "Versión móvil desarrollada con React Native, independiente de la versión web.",
+                en: "Mobile version built with React Native, separate from the web version.",
               },
               items: [
                 { src: '/mi-portfolio/media/jobs/Alset/stadio/Mobile/Expo/Screenshot_20260310-152210_stadiobet.avif' },
@@ -301,8 +301,8 @@ export const experience: Experience = {
           content: [
             {
               description: {
-                es: "También estuve involucrado en el desarrollo de un sistema para la gestión de inventario, pedidos y envíos. A continuación se muestran algunas capturas de pantalla del sistema.",
-                en: "I was also involved in the development of a system for inventory, orders and shipments management. Below are some screenshots of the system."
+                es: "Capturas del sistema que gestiona el flujo logístico completo: inventario, pedidos y envíos.",
+                en: "Screenshots of the system managing the full logistics flow: inventory, orders and shipments.",
               },
               layout: 'slides',
               items: [
@@ -351,8 +351,8 @@ export const experience: Experience = {
           content: [
             {
               description: {
-                es: "Únicamente cuento con esta evidencia de la aplicación web de cambios de precios. Aquí se puede ver algunas fotos de como se ve la aplicación web.",
-                en: "I only have this evidence of the web application for price changes. Here you can see some photos of how the web application looks."
+                es: "Comparto algunas capturas del sistema web de cambios de precios que desarrollé.",
+                en: "A few screenshots of the price-change web system I built.",
               },
               layout: 'wide',
               items: [
@@ -413,8 +413,8 @@ export const experience: Experience = {
           title: { es: 'Sistemas para la institución', en: 'Systems for the institution' },
           content: [{
             description: {
-              es: "Únicamente cuento evidencia del sistema del examen, y a continuación les muestro como esta puesto en acción en dos diferentes campus de la institución.",
-              en: "I only have evidence of the exam system, and below I show you how it is put into action in two different campuses of the institution."
+              es: "Comparto el sistema de exámenes funcionando en dos campus de la institución. Única evidencia que puedo compartir.",
+              en: "The English exam system running in two campuses of the institution. The only evidence I can share."
             },
             layout: 'slides',
             items: [
