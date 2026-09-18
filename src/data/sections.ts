@@ -4,8 +4,8 @@ export const interests: Interests = {
   heading: { es: 'Intereses', en: 'Interests' },
   interests: [
     {
-      es: 'Programación, IT, sistemas y Desarrollo de Software, con especial interés en el desarrollo móvil.',
-      en: 'Programming, IT, systems and software development, with a special interest in mobile development.',
+      es: 'Desarrollo de Software, Programación, profesionalmente enfocado en .NET Full-Stack y desarrollo móvi, sistemas y TI.',
+      en: 'Software Development, Programming, professionally focused on .NET Full-Stack and mobile development, systems and IT.',
     },
   ],
   hobbiesHeading: { es: 'Hobbies', en: 'Hobbies' },
