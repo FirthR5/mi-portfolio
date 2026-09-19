@@ -1,7 +1,7 @@
 import type { LocalizedText } from './types'
 
 export const site = {
-  name: 'Fernando Fernández Ríos',
+  name: 'Fernando Fernández',
   brand: { es: 'Fernando', en: 'Fernando' } as LocalizedText,
   footerTagline: {
     es: 'Ingeniero en Sistemas · Desarrollador de Software',
