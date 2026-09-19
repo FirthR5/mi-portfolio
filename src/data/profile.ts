@@ -45,8 +45,8 @@ export const summary: Summary = {
   ],
   paragraph: {
     // Hola, me llamo Fernando.
-    es: "Bienvenido a mi sitio web. Soy Fernando, un Ingeniero en Sistemas que se especializa en el área de Desarrollo de Software con más de 3 años de experiencia en el que he trabajado en el desarrollo de aplicaciones móviles y sistemas Web (Full-Stack).",
-    en: "Welcome to my website. I'm Fernando, a Computer Systems Engineer specializing in Software Development with over 3 years of experience working on mobile applications and web systems (Full-Stack).",
+    es: "Bienvenido a mi sitio web. Soy Fernando, un Ingeniero en Sistemas que se especializa en el área de Desarrollo de Software con más de 3 años de experiencia. He trabajado como Full Stack con .NET desarrollando sistemas web y en desarrollo de aplicaciones móviles.",
+    en: "Welcome to my website. I'm Fernando, a Computer Systems Engineer specializing in Software Development with over 3 years of experience. I've worked as a Full Stack developer with .NET, building backend/frontend systems and mobile applications.",
   },
   objective: {
     es: 'Quiero sumarme a un equipo donde el software resuelva problemas de verdad, donde me reten cada día y donde cada producto lleve mi marca.',
@@ -138,7 +138,7 @@ export const experience: Experience = {
           },
           bullets: [
             {
-              es: 'Trabajé full-stack en una plataforma social de apuestas con 70 mil+ usuarios: móvil, web y backend, aportando funcionalidades, APIs y estabilidad en toda la plataforma.',
+              es: 'Trabajé como full-stack en una plataforma social de apuestas con +70 mil usuarios: móvil, web y backend, aportando funcionalidades, APIs y estabilidad en toda la plataforma.',
               en: 'Worked full-stack on a social betting platform with 70k+ users — mobile, web, and backend — delivering features, APIs, and stability across the stack.',
             },
             {
@@ -406,7 +406,7 @@ description: {
           title: null,
           bullets: [
             {
-              es: 'Formé parte del equipo que diseñó y construyó sistemas desde cero, varios en producción. Los más relevantes: exámenes de egreso de inglés, asistencia y agenda de visitas, encuestas de satisfacción y control académico.',
+              es: 'Formé parte del equipo que diseñó y construyó varios sistemas desde cero, estos utilizados en operación diaria. Los más relevantes: exámenes de egreso de inglés, asistencia y agenda de visitas, encuestas de satisfacción y control académico.',
               en: 'Part of a team that designed and built systems from scratch, several in production. Most relevant: English graduation exams, attendance and visit scheduling, satisfaction surveys, and academic control.',
             },
             {
