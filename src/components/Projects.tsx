@@ -134,8 +134,8 @@ export default function Projects({
         <h3 className="projects-subheading">{t(projects.openSource.heading)}</h3>
         <p className="section-subtitle">
           {t({
-            es: 'Mis aportaciones a software y apps FOSS que uso.',
-            en: 'Contributions to software and apps I use.',
+            es: 'Mis aportaciones a software y aplicaciones Free and Open Source que utilizo.',
+            en: 'Contributions to Free and Open Source software I use.',
           })}
         </p>
         <div className="projects-grid">{openSourceSorted.map(renderCard)}</div>
