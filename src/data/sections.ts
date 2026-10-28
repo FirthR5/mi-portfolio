@@ -195,8 +195,8 @@ export const training: Training = {
         en: 'Rapid Developer - Low Code',
       },
       detail: {
-        es: 'Expedición, marzo 2024 · ID 70685',
-        en: 'Issued, March 2024 · ID 70685',
+        es: 'Expedición, marzo 2024',
+        en: 'Issued, March 2024',
       },
       url: 'https://www.linkedin.com/in/fernando-f-rios/details/certifications/',
     },

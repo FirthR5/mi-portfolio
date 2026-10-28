@@ -44,21 +44,16 @@ export const summary: Summary = {
     },
   ],
   paragraph: {
-    // Hola, me llamo Fernando.
-    es: "Bienvenido a mi sitio web. Soy Fernando, un Ingeniero en Sistemas que se especializa en el área de Desarrollo de Software con más de 3 años de experiencia. He trabajado como Full Stack con .NET desarrollando sistemas web y en desarrollo de aplicaciones móviles.",
-    en: "Welcome to my website. I'm Fernando, a Computer Systems Engineer specializing in Software Development with over 3 years of experience. I've worked as a Full Stack developer with .NET, building backend/frontend systems and mobile applications.",
+    es: "Ingeniero en Sistemas enfocado en el área de Desarrollo de Software con más de 3 años de experiencia. He trabajado como Full Stack (con .NET) desarrollando sistemas web, programas de escritorio y aplicaciones móviles.",
+    en: "I'm a Computer Systems Engineer specializing in Software Development with over 3 years of experience. I've worked as a Full Stack developer with .NET, building backend/frontend/desktop systems and mobile applications.",
   },
   objective: {
-    es: 'Quiero sumarme a un equipo donde el software resuelva problemas de verdad, donde me reten cada día y donde cada producto lleve mi marca.',
-    en: 'I want to join a team where software truly solves problems, where I\'m challenged every day, and where every product carries my mark.',
+    es: '',
+    en: '',
   },
   about_me: {
-    /*
-    es: 'Soy Ingeniero en Sistemas y desarrollador .NET Full-Stack: tomo ideas desde cero hasta producción. Mi código ha llegado a más de 70 mil usuarios, desde interfaces modernas y sincronización en tiempo real en móvil hasta la misma experiencia recreada en la web con React.',
-    en: "I'm a Computer Systems Engineer and .NET Full-Stack developer who takes ideas from zero to production. My code has reached 70k+ users — from modern UIs and real-time sync on mobile to that same experience recreated on the web with React.",
-    */
-    es: 'Hola, soy Fernando, un Ingeniero en sistemas computacionales y profesionalmente me enfoco en el área de Desarrollo de Software. Tengo experiencia en el desarrollo de aplicaciones móviles y sistemas Web Full-Stack, en los cuales he trabajado en desarrollar diferentes sistemas y aplicaciones en mi trayectoria profesional, los cuales puede comprobar en la sección de \"Experiencia Profesional\" y \"Portafolio\".',
-    en: "Hello, I'm Fernando, a Computer Systems Engineer and professionally I focus on Software Development. I have experience in developing mobile applications and Full-Stack Web systems, in which I have worked on developing different systems and applications throughout my professional career, which you can see in the \"Professional Experience\" and \"Portfolio\" sections.",
+    es: "Soy Fernando, Ingeniero en Sistemas con más de 3 años de experiencia en desarrollo de software. He trabajado en aplicaciones móviles y sistemas web Full-Stack, desde la API y la base de datos hasta la interfaz.\n\nComo pasatiempo, disfruto contribuir a proyectos de código abierto que uso a diario —principalmente en Kotlin y Python—; también me gusta escribir scripts de automatización y hacer web scraping con Python.",
+    en: "I'm Fernando, a Computer Systems Engineer with over 3 years of experience in software development. I've worked on mobile applications and full-stack web systems, from API and database to UI.\n\nAs a hobby, I enjoy contributing to open-source projects I use daily — mainly Kotlin and Python — and I also like writing automation scripts and doing some web scraping in Python.",
   }
 }
 
@@ -106,8 +101,8 @@ export const experience: Experience = {
       company: 'ALSET',
       location: { es: 'Remoto', en: 'Remote' },
       period: {
-        es: 'Agosto 2024 – Mayo 2026',
-        en: 'August 2024 – May 2026',
+        es: 'Agosto 2024 – 2026',
+        en: 'August 2024 – 2026',
       },
       technologies: [
         'C#',
@@ -239,8 +234,8 @@ export const experience: Experience = {
 
             {
               description: {
-                es: "Modernización total de la interfaz. Compara antes y después arrastrando el slider.",
-                en: "Complete interface modernization. Compare before and after by dragging the slider.",
+                es: "Compara arrastrando el slider del antes y después modernización total de la interfaz.",
+                en: "Compare before and after the interface modernization by dragging the slider.",
               },
               layout: 'before-after',
               items: [
@@ -262,7 +257,7 @@ export const experience: Experience = {
           content: [
             {
               description: {
-                es: "La misma app, ahora para la Web: recreación completa en React con la misma experiencia de usuario.",
+                es: "Recrée completamente la  misma aplicación pero en Web con React. ",
                 en: "The same app, now for the Web: a full React recreation with the same user experience.",
               },
               layout: 'wide',
@@ -280,7 +275,7 @@ export const experience: Experience = {
             },
             {
 description: {
-                es: "Versión móvil desarrollada con React Native, independiente de la versión web.",
+                es: "Hice otra versión móvil desarrollada con React Native, independiente de la versión web.",
                 en: "Mobile version built with React Native, separate from the web version.",
               },
               items: [
@@ -301,8 +296,8 @@ description: {
           content: [
             {
               description: {
-                es: "Capturas del sistema que gestiona el flujo logístico completo: inventario, pedidos y envíos.",
-                en: "Screenshots of the system managing the full logistics flow: inventory, orders and shipments.",
+                es: "Capturas del sistema que gestiona el flujo logístico: inventario, pedidos y envíos.",
+                en: "Screenshots of the system managing the logistics flow: inventory, orders and shipments.",
               },
               layout: 'slides',
               items: [

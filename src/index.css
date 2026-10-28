@@ -530,6 +530,7 @@ img {
   font-size: 17px;
   color: var(--text);
   max-width: 760px;
+  white-space: pre-line;
 }
 
 .about-me strong {

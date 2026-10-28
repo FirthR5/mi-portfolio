@@ -217,6 +217,7 @@ export const projects: Projects = {
         category: { es: 'Contribución', en: 'Contribution' },
         type: ProjectType.OpenSource,
         repoUrl: 'https://github.com/Packss/Linux-NitroSense',
+        // repoUrl: 'https://github.com/FirthR5/Linux-NitroSense/',
         description: [
           {
             es: 'Agregué soporte para el modelo Nitro "AN515-53", permitiendo que el controlador funcione en laptops de este modelo como la que poseo.',
@@ -232,19 +233,32 @@ export const projects: Projects = {
         },
         startDate: '2026-05',
         period: {
-          es: 'Mayo 2026',
-          en: 'May 2026',
+          es: 'Junio – Octubre 2026',
+          en: 'June – October 2026',
         },
         category: { es: 'Contribución', en: 'Contribution' },
         type: ProjectType.OpenSource,
         repoUrl: 'https://github.com/libre-tube/LibreTube',
+        // repoUrl: 'https://github.com/FirthR5/LibreTube/tree/fork-alpha',
         description: [
           {
-            es: 'Identifiqué y corregí un bug en dispositivo tablet, mejorando la experiencia de usuario.',
-            en: 'Identified and fixed a bug on tablet devices, improving user experience.',
+            es: 'Rediseñé la biblioteca con pestañas separadas para playlists y marcadores, contadores de vídeos y caché compartida; además optimicé la carga consultando las playlists sin cargar todos sus vídeos.',
+            en: 'Redesigned the library with separate Playlists and Bookmarks tabs, video counters and shared caching; also improved loading by querying playlists without fetching all their videos.',
+          },
+          {
+            es: 'Implementé la ordenación manual de playlists locales mediante drag & drop, incluyendo una migración de Room (v26) y la persistencia del orden en mi Fork.',
+            en: 'Implemented manual drag-and-drop sorting for local playlists, including a Room migration (v26) and order persistence in my Fork.',
+          },
+          {
+            es: 'Corregí solapamientos del reproductor y los comentarios con la taskbar y las barras del sistema en tablets, además de fallos de recursos y reproducción del cliente SABR.',
+            en: 'Fixed player and comment overlaps with the taskbar and system bars on tablets, plus resource and playback bugs in the SABR client.',
+          },
+          {
+            es: 'Corregí la desincronización de la información y el contador de playlists al eliminar vídeos; la corrección fue integrada en el repositorio original de LibreTube.',
+            en: 'Fixed playlist information and counter desync after removing videos; the fix was merged into the upstream LibreTube repository.',
           },
         ],
-        technologies: 'Kotlin',
+        technologies: 'Kotlin, Android SDK, XML/ViewBinding, AndroidX ViewModel, ViewPager2/TabLayout, Room, RecyclerView, Media3/ExoPlayer',
       },
     ],
   },
