@@ -52,8 +52,8 @@ export const summary: Summary = {
     en: '',
   },
   about_me: {
-    es: "Soy Fernando, Ingeniero en Sistemas con más de 3 años de experiencia en desarrollo de software. He trabajado en aplicaciones móviles y sistemas web Full-Stack, desde la API y la base de datos hasta la interfaz.\n\nComo pasatiempo, disfruto contribuir a proyectos de código abierto que uso a diario —principalmente en Kotlin y Python—; también me gusta escribir scripts de automatización y hacer web scraping con Python.",
-    en: "I'm Fernando, a Computer Systems Engineer with over 3 years of experience in software development. I've worked on mobile applications and full-stack web systems, from API and database to UI.\n\nAs a hobby, I enjoy contributing to open-source projects I use daily — mainly Kotlin and Python — and I also like writing automation scripts and doing some web scraping in Python.",
+    es: "Soy un Ingeniero en Sistemas con más de 3 años de experiencia en desarrollo de software. He trabajado en aplicaciones móviles y sistemas web .NET Full-Stack, desde la API y la base de datos hasta las interfaces.\n\nComo pasatiempo, disfruto contribuir a proyectos de código abierto que uso a diario —principalmente en Kotlin y Python—; también me gusta escribir scripts de automatización y hacer web scraping con Python.",
+    en: "I'm a Computer Systems Engineer with over 3 years of experience in software development. I've worked on mobile applications and full-stack web systems, from API and database to UI.\n\nAs a hobby, I enjoy contributing to open-source projects I use daily — mainly Kotlin and Python — and I also like writing automation scripts and doing some web scraping in Python.",
   }
 }
 

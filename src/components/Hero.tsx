@@ -40,6 +40,10 @@ export default function Hero() {
           {/* <p className="lead">{t(summary.objective)}</p> */}
 
           <div className="hero-actions">
+            <Link className="btn btn-outline" to="/portafolio">
+              {t({ es: 'Ver portafolio', en: 'View portfolio' })}
+            </Link>
+
             <a className="btn btn-primary" href={cvLinks[lang]} target="_blank" rel="noopener noreferrer">
               {t(contact.downloadCvLabel)}
             </a>
@@ -51,9 +55,6 @@ export default function Hero() {
               <MailIcon />
               {t({ es: 'Contáctame', en: 'Contact me' })}
             </EmailLink>
-            <Link className="btn btn-outline" to="/portafolio">
-              {t({ es: 'Ver portafolio', en: 'View portfolio' })}
-            </Link>
           </div>
         </div>
 
